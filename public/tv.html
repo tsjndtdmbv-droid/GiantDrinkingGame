@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giant Tour de Sip</title>
+<link rel="icon" href="/assets/favicon.svg">
+<link rel="stylesheet" href="/tv.css">
+</head>
+<body>
+<div id="stage">
+  <!-- LOBBY -->
+  <div id="lobby" class="screen">
+    <div class="lobby-left">
+      <img class="logo" src="/assets/logo.svg" alt="">
+      <h1>GIANT<br><span>TOUR DE SIP</span></h1>
+      <p class="tag">The bike-factory party board game you play with your phone.</p>
+      <p class="models">TCR &middot; PROPEL &middot; DEFY &middot; REVOLT &middot; TRANCE &middot; REIGN &middot; GLORY &middot; TALON</p>
+      <p class="fine">For adults of legal drinking age. Sips can be anything, water counts. Know your limits and never drink and ride. A fan-made party game, not an official Giant product.</p>
+    </div>
+    <div class="lobby-mid">
+      <div class="qrbox"><img id="qr" alt="QR code"></div>
+      <div class="scan">Scan to join</div>
+      <div class="url">or open <b id="joinurl"></b></div>
+      <div class="codebox">ROOM <b id="code">....</b></div>
+    </div>
+    <div class="lobby-right">
+      <h2>Players <span id="count">0/8</span></h2>
+      <div id="lobbyPlayers"></div>
+      <div id="lobbyHint" class="hint"></div>
+    </div>
+  </div>
+
+  <!-- GAME -->
+  <div id="game" class="screen" style="display:none">
+    <div id="banner"></div>
+    <div id="ground"></div>
+    <div id="board"></div>
+    <div id="rules"></div>
+    <div id="side">
+      <div class="side-top">
+        <img id="qr2" alt="">
+        <div><div class="small">Join late? Scan or enter</div><div class="code2" id="code2"></div></div>
+      </div>
+      <div id="scores"></div>
+      <a class="ruleslink">Rules: <span id="rulesurl"></span></a>
+    </div>
+    <div id="dicewrap"><div id="dicebox"><div id="cube"></div></div><div id="dieshadow"></div><div><span id="dielabel"></span></div></div>
+    <div id="modal"><div id="modalCard"></div></div>
+    <div id="timer"></div>
+  </div>
+
+  <!-- GAME OVER -->
+  <div id="over" class="screen" style="display:none"></div>
+
+  <div id="fx"></div>
+  <div id="toasts"></div>
+  <div id="offline">Reconnecting...</div>
+</div>
+<script src="/tv.js"></script>
+</body>
+</html>
