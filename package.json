@@ -1,0 +1,13 @@
+{
+  "name": "giant-tour-de-sip",
+  "version": "1.0.0",
+  "description": "A bike-themed party drinking board game: the board on your TV, the controls on your phones.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/sim.js",
+    "assets": "node tools/make-assets.js"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}

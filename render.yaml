@@ -1,0 +1,8 @@
+# One-click deploy on render.com (New > Blueprint, point it at your repo)
+services:
+  - type: web
+    name: giant-tour-de-sip
+    runtime: node
+    plan: free
+    buildCommand: "true"
+    startCommand: node server.js
